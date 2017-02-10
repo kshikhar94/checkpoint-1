@@ -1,0 +1,11 @@
+1) inside bin ./mongod
+2) ./mongo
+
+show dbs
+show collections
+
+use SportsBlog
+db.createCollection('categories')
+db.categories.insert({title:'Baseball', 'description':These are baseball articles'})
+db.categories.find()
+db.articles.find()

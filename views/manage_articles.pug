@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	.container
+		h1 #{title}
+		table(class='table table-striped')
+				tr
+					th Article Title
+					th Author
+					th Edit Your Articles
+				each article in articles
+					tr
+						td 
+							a(href='#') #{article.title}
+						td #{article.author}		
+						td 
+							a(class= "btn btn-primary" href='/manage/articles/edit/'+article._id) Edit
+		a(class = "btn btn-default", href="/manage/articles/add") Add New Article

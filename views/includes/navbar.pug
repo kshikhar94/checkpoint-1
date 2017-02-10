@@ -1,0 +1,31 @@
+nav.navbar.navbar-inverse
+	.container-fluid
+		.navbar-header
+			a.navbar-brand(href='/') Blog
+		|     
+		ul.nav.navbar-nav
+			li
+				a(href='/') Home
+			|      
+			|       
+			li
+				a(href='/Articles') Articles
+			li
+				a(href='/Categories') Categories
+			|
+		|     
+		ul.nav.navbar-nav.navbar-right
+			li.dropdown
+				a.dropdown-toggle(data-toggle='dropdown', href='#')
+					| Manage 
+					span.caret
+				|         
+				ul.dropdown-menu
+					li
+						a(href='/manage/articles') Articles
+					|           
+					li
+						a(href='/manage/categories') Categories
+
+				<li><a href="#">About</a></li>
+				// <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

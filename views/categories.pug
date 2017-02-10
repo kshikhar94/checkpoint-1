@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	.container
+		h1 #{title}
+		h4 View article by Category
+		ul
+			each category in categories
+				li.list-group-item 
+					a(href='articles/category/'+category._id) #{category.title}

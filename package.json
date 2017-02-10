@@ -1,0 +1,18 @@
+{
+  "name": "sportsblog",
+  "version": "1.0.0",
+  "description": "Simple sports blog app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "pug": "^2.0.0-beta6"
+  }
+}

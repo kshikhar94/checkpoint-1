@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	.container
+		h1 #{title}
+		.row
+			.col-md-12
+				each article in articles
+					a(href='/articles/show/'+article._id)
+						h2.post-title #{article.title}
+					h4.post-subtitle #{article.subtitle}
+					p.post-meta
+						| Posted by #{article.author}
+					hr
